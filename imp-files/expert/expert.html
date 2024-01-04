@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <style>
+
+        /* ##############     EXPERT css starts       ###################### */
+
+ section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;  
+  }
+  
+  .expertarticle {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 500px;
+    border-radius: 2px;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0.9;
+    transition: 0.5s;  
+  }
+  
+  .expertarticle.active {
+    width: 600px;
+    opacity: 1;
+  }
+  
+  .expertarticle .material-symbols-outlined {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    font-size: 28px;
+  }
+  
+  .expertarticle .expert-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    padding: 19px 0 18px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(29, 24, 28, 0.944);      transition: 0.25s;
+    transform: translateY(100%);
+  }
+  
+  .expertarticle:hover .expert-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .expertarticle img {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%; 
+  }
+  
+  .expertarticle .expert-content-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 0; /* Add margin to prevent overlapping with the image */
+    color: var(--neutral-neutral-0, #FFF);
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px
+  }
+  
+  .expertarticle .expert-content-paragraph {
+      color: var(--neutral-neutral-300, #D1D5DB);
+      font-size: 14px;
+  }
+  
+  .expertarticle .expert-button {
+      border-radius: 4px;
+      border: none;
+      display: flex;
+      padding: 10px 30px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      background: var(--button-gradient, linear-gradient(90deg, #AC5821 0%, #E1722A 100%));
+      color: #FFF;
+  }
+  .expert-heading {
+    color: var(--brown-primary, #8D4F1F);
+    text-align: center;
+    font-size: 36px;
+    font-family: Kugile;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+  }
+  .expert-sub-heading {
+    color: var(--neutral-neutral-500, #6B7280);
+    text-align: center;
+    font-size: 18px;
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  
+/* Custom CSS for mobile view */
+@media only screen and (max-width: 600px) {
+  
+  
+  .expert-heading {
+    color: var(--brown-primary, #8D4F1F);
+    /* Header/36px: Regular */
+    font-family: Kugile;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    line-height: 64px;
+    margin: 8px;
+}
+
+
+.expert-sub-heading{color: var(--neutral-neutral-500, #6B7280);
+    /* Body/18px: Regular */
+    font-family: Red Hat Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin: 8px;
+    margin-bottom: 36px;
+    transform: translateX();
+}
+
+  .expertcontainer {
+    overflow-x: hidden;
+  }
+
+  section {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .expertarticle {
+    flex: 0 0 auto;
+    width: 327px;
+    height: 561px;
+    margin-right: -8px;
+    transition: transform 0.5s;
+}
+
+  .expertarticle.active {
+    width: 100px;
+    transform: translateX(0%);
+  }
+
+  .expertarticle:not(.active) {
+    transform: translateX(0px);
+  }
+
+  .expertarticle img {
+    width:180%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+  }
+   
+  .expertarticle:hover .expert-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(1);
+  }
+
+  .expertarticle .expert-content-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 0; /* Add margin to prevent overlapping with the image */
+    color: var(--neutral-neutral-0, #FFF);
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px
+  }
+  
+  .expertarticle .expert-content-paragraph {
+      color: var(--neutral-neutral-300, #D1D5DB);
+      font-size: 14px;
+  }
+  
+  .expertarticle .expert-button {
+      border-radius: 4px;
+      border: none;
+      display: flex;
+      padding: 10px 30px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      background: var(--button-gradient, linear-gradient(90deg, #AC5821 0%, #E1722A 100%));
+      color: #FFF;
+  }
+}
+.expertarticle.active .expert-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0%);
+        }
+
+           /* Add this new CSS style */
+           .expertarticle.active {
+            width: 600px;
+            transform: translateX(0%);
+        }
+
+        .expertarticle:not(.active) {
+            transform: translateX(0px);
+        }
+
+        .expertarticle:not(.active) .expert-content {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(100%);
+        }
+
+        .expertarticle.active .expert-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0%);
+        }
+
+  </style>
+  
+</head>
+<body>
+    <!-- ##############     EXPERT html starts       ###################### -->
+  
+  
+    <div class="expertcontainer container">
+
+      <div class="expert-main-heading text-center">
+          <h1 class="expert-heading">Get Expert Help at Your Convenience</h1>
+          <p class="expert-sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.</p>
+      </div>
+      <section>
+          <article class="expertarticle article">
+              <img src="assets/dealer.jpg" alt="Dealers" />
+             <article>
+              <div class="container">
+              </div>
+             </article>
+              <div class="expert-content">
+                  <h2 class="expert-content-heading">Dealers</h2>
+                  <p class="expert-content-paragraph">This project required a huge amount of hours but sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                  <button class="expert-button">Explore More</button>
+              </div>
+          </article>
+          <article class="expertarticle article">
+              <img src="assets/Paintcontractors.jpg" alt="Paint contractors" />
+              <div class="expert-content">
+                  <h2 class="expert-content-heading">Paint Contractors</h2>
+                  <p class="expert-content-paragraph">This project required a huge amount of hours but sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                  <button class="expert-button">Explore More</button>
+              </div>
+          </article>
+          <article class="expertarticle article">
+              <img src="assets/Site-visit.jpg" alt="Site visit" />
+              <div class="expert-content">
+                  <h2 class="expert-content-heading">Site Visit</h2>
+                  <p class="expert-content-paragraph">This project required a huge amount of hours but sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                  <button class="expert-button">Explore More</button>
+              </div>
+          </article>
+      </section>
+  </div>
+
+<!-- JavaScript code -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  // JavaScript code for image swipe effect
+  function activateArticle(article) {
+  // Remove the "active" class from all expert articles
+  const expertArticles = document.querySelectorAll(".expertarticle");
+  expertArticles.forEach((article) => article.classList.remove("active"));
+
+  // If article is provided, set it as active
+  if (article) {
+    article.classList.add("active");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const expertArticles = document.querySelectorAll(".expertarticle");
+  const container = document.querySelector(".expertcontainer");
+
+  // Add event listeners for mouseover and mouseout on each card
+  expertArticles.forEach((expertArticle) => {
+    expertArticle.addEventListener("mouseover", () => {
+      activateArticle(expertArticle); // Set the current card as active
+    });
+
+    expertArticle.addEventListener("mouseout", () => {
+      activateArticle(expertArticles[0]); // Activate the first card by default
+    });
+  });
+
+  // Activate the first card by default
+  activateArticle(expertArticles[0]);
+});
+</script>
+
+
+
+</body>
+</html>

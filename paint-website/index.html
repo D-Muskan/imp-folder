@@ -1,0 +1,2200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-links -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kugile:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Red Hat Display:wght@300;400;500;700&display=swap"
+    />
+
+    <!-- font-awesome search-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- OwlCarousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Milesaway</title>
+  </head>
+  <body>
+    <!------------------------------------------------------------------------------------ 
+        Navbar - Section
+        -------------------------------------------------------------------------------------->
+    <nav id="navbar" class="navbar navbar-expand-lg nav-fix">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          
+          <img
+            src="assets/images/aw-logo-brown.png"
+            class="nav-show img-fluid aw-logo mx-2"
+            alt=""
+          />
+          <img
+            src="assets/images/header-aw-logo.png"
+            class="nav-hide img-fluid aw-logo mx-2"
+            alt=""
+          />
+        </a>
+        <div
+          id="navbarToggler"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <img
+              class="nav-show"
+              id="navOpen"
+              src="assets/images/menu-black.png"
+              alt=""
+            />
+            <img class="nav-hide" src="assets/images/nav-open.png" alt="" />
+            <img id="navClose" src="assets/images/nav-close.png" alt="" />
+          </span>
+        </div>
+
+        <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-lg-none col-7">
+            <div class="search-bar">
+              <div class="search-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <input type="text" class="search-input" placeholder="Search" />
+            </div>
+
+            <div class="mbl-result p-4">
+              <div class="result-page">
+                <div class="result-title">Product</div>
+                <div class="result-subtitle">
+                  Milesaway Italian PU Clear
+                  <span class="result-word">Gloss</span>
+                </div>
+                <div class="result-subtitle">
+                  Milesaway Italian PU Clear
+                  <span class="result-word">Gloss</span>
+                </div>
+              </div>
+              <div class="result-page mt-3">
+                <div class="result-title">Blogs & Articles</div>
+                <div class="result-subtitle">
+                  How to protect wood
+                  <span class="result-word">Gloss</span> during monsoon
+                </div>
+                <div class="result-subtitle">
+                  3 best ways to retain the wood
+                  <span class="result-word">Gloss</span> with Milesaway paints
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="navbar-links">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/blog-listing">Inspiration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/product-listing">Product</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/about-us">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/contact-us">Contact Us</a>
+              </li>
+
+              <li class="nav-item d-none d-lg-block search-icon-wrapper">
+                <a class="nav-link" href="#">
+                  <img
+                    class="nav-show"
+                    src="assets/images/search-black.png"
+                    alt=""
+                  />
+                  <img
+                    class="nav-hide"
+                    src="assets/images/nav-search.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="container">
+            <div class="row">
+              <input
+                class="nav-search form-control rounded-pill me-2 ba-searchbar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                style="
+                  background: var(--neutral-neutral-50, #f9fafb)
+                    url('assets/images/search-black.png') no-repeat 10px center;
+                "
+              />
+
+              <div
+                class="nav-search form-control py-4 mt-5 desk-searchbar result-container"
+                style="width: 48%"
+              >
+                <div class="result-page">
+                  <div class="result-title">Product</div>
+                  <div class="result-subtitle">
+                    Milesaway Italian PU Clear
+                    <span class="result-word">Gloss</span>
+                  </div>
+                  <div class="result-subtitle">
+                    Milesaway Italian PU Clear
+                    <span class="result-word">Gloss</span>
+                  </div>
+                </div>
+                <div class="result-page mt-3">
+                  <div class="result-title">Blogs & Articles</div>
+                  <div class="result-subtitle">
+                    How to protect wood
+                    <span class="result-word">Gloss</span> during monsoon
+                  </div>
+                  <div class="result-subtitle">
+                    3 best ways to retain the wood
+                    <span class="result-word">Gloss</span> with Milesaway paints
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------------------------------------------------------------------------ 
+             Carousel
+             -------------------------------------------------------------------------------------->
+    <div id="carouselExampleIndicators" class="carousel slide slider-container">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="banner-text">Bring Italy to Your Home</div>
+      <div class="carousel-inner sec-1-carousel-inner-image">
+        <div class="carousel-item active">
+          <img
+            src="assets/images/slider1.png"
+            class="slider-img slider1 d-md-block"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/slider2.png"
+            class="slider-img d-none d-md-block"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/slider3.png"
+            class="slider-img d-none d-md-block"
+            alt="..."
+          />
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Form1 - Section
+         -------------------------------------------------------------------------------------->
+    <div class="container-fluid form1-container mt-5">
+      <div class="row justify-content-evenly">
+        <div class="col-lg-12 form1-head">A step closer to your dream</div>
+        <div class="col-lg-12 form1-text">
+          Vorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+      </div>
+      <div class="row form1-inputlist pt-3">
+        <div class="col-lg-2">
+          <div class="form1-inputcontainer">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              autocomplete="off"
+            />
+            <label for="exampleFormControlInput1">Name</label>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="form1-inputcontainer">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput2"
+              autocomplete="off"
+            />
+            <label for="exampleFormControlInput2">Number</label>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <select
+            class="form1-inp rounded p-2 form1-placeholder"
+            id="roleSelect"
+          >
+            <option>I am</option>
+            <option>Wholeseller</option>
+            <option>Retailer</option>
+            <option>Customer</option>
+          </select>
+        </div>
+        <div class="col-lg-2">
+          <select
+            class="form1-inp rounded p-2 form1-placeholder"
+            id="helpSelect"
+          >
+            <option>Need help with</option>
+            <option>Product</option>
+            <option>Location</option>
+          </select>
+        </div>
+        <div class="col-lg-2">
+          <button class="col-12 btn form1-contact px-4">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Nav2 - Section
+         -------------------------------------------------------------------------------------->
+    <div class="tablinks-container">
+      <div class="tablinks-mobile nav2-bg p-3 mt-5">
+        <div class="scrollable nav2-list">
+          <a class="nav2-link" href="#inspiration">Dream</a>
+          <a class="nav2-link" href="#guidance">Diagnose</a>
+          <a class="nav2-link" href="#quality">Decide</a>
+          <a class="nav2-link" href="#tools">Do</a>
+          <a class="nav2-link" href="#testimonial">Delight</a>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         About - Section
+         -------------------------------------------------------------------------------------->
+    <div class="about-container">
+      <div
+        class="container-fluid about-bg"
+        style="background-image: url('assets/images/about-bg.png')"
+      >
+        <div class="card about-card">
+          <h1 class="about-heading">About Company</h1>
+
+          <p class="about-para">
+            A home is a symbol of aspirations, and our intention is to enhance
+            it with durable coatings that withstand the passage of time.
+          </p>
+
+          <p class="blank-para-about"></p>
+          <p class="about-para2">
+            Milesaway is a range of luxury wood finishes from Grasim Industries
+            Ltd (Birla Paints Div.) which is part of the Artmilesaway, a
+            global conglomerate, in the league of Fortune 500 companies. The
+            Milesaway range of wood finishes incorporates the latest Italian
+            technology and would strive to bring consumers the highest standards
+            of quality and finesse.
+          </p>
+
+          <div class="about-icons">
+            <div>
+              <img
+                class="about-icon"
+                alt=""
+                src="assets/images/about-icon.png"
+              />
+              <p class="about-icon-heading">Details 1</p>
+              <p class="about-icon-text">
+                Lorem ipsum dolor sit amet consectetur
+              </p>
+            </div>
+            <div>
+              <img
+                class="about-icon"
+                alt=""
+                src="assets/images/about-icon.png"
+              />
+              <p class="about-icon-heading">Details 2</p>
+              <p class="about-icon-text">
+                Lorem ipsum dolor sit amet consectetur
+              </p>
+            </div>
+            <div>
+              <img
+                class="about-icon"
+                alt=""
+                src="assets/images/about-icon.png"
+              />
+              <p class="about-icon-heading">Details 3</p>
+              <p class="about-icon-text">
+                Lorem ipsum dolor sit amet consectetur
+              </p>
+            </div>
+          </div>
+          <div class="about-button">
+            <button class="a-button">
+              Know more
+              <img
+                class="arrow-chevron-down-icon"
+                alt=""
+                src="assets/images/arrow-chevron-down.svg"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Inspiration - Section
+         -------------------------------------------------------------------------------------->
+    <div class="container-fluid" id="inspiration">
+      <div class="row">
+        <div class="col-md-5 inspiration-padding">
+          <div
+            class="inspiration-image1"
+            style="background-image: url('assets/images/inspiration1.png')"
+          >
+            <!-- Background Image - 1  -->
+            <div class="inspiration-text">
+              <p>Inspiration</p>
+              <h3>Bohenian Theme</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="row insp-row2">
+            <div class="col-md-6 inspiration-padding inspiration-gap">
+              <div
+                class="inspiration-image2"
+                style="background-image: url('assets/images/inspiration2.png')"
+              >
+                <!-- Background Image - 2  -->
+                <div class="inspiration-text">
+                  <p>Inspiration</p>
+                  <h3>Bohenian Theme</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 inspiration-padding inspiration-gap">
+              <div
+                class="inspiration-image3"
+                style="background-image: url('assets/images/inspiration3.png')"
+              >
+                <!-- Background Image - 3  -->
+                <div class="inspiration-text">
+                  <p>Inspiration</p>
+                  <h3>Bohenian Theme</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row insp-row3">
+            <div
+              class="col-md-12 inspiration-padding inspiration-gap inspiration-lastgap"
+            >
+              <div
+                class="inspiration-image4"
+                style="background-image: url('assets/images/inspiration4.png')"
+              >
+                <!-- Background Image - 4 -->
+                <div class="inspiration-text">
+                  <p>Inspiration</p>
+                  <h3>Bohenian Theme</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Blog - Section
+         -------------------------------------------------------------------------------------->
+    <div class="container my-4 pb-5 pb-md-0" id="blogs">
+      <div class="py-2">
+        <div class="row">
+          <h1 class="blog-head">Blogs & Articles</h1>
+          <p class="blog-text">
+            Get to know the best stories sit amet, consectetur adipisicing elit,
+            sed do eiusmod temporize
+          </p>
+        </div>
+
+        <div class="blog-links row px-md-3">
+          <div class="col-12 col-md-4 bloglinks-mobile pt-md-2">
+            <span class="row scrollable">
+              <a
+                id="trends-btn"
+                class="blog-link col-4 py-3 active"
+                href="#blogs"
+                >Trends</a
+              >
+              <a
+                id="inspirations-btn"
+                class="blog-link col-4 py-3"
+                href="#blogs"
+                >Inspirations</a
+              >
+              <a id="solutions-btn" class="blog-link col-4 py-3" href="#blogs"
+                >Solutions</a
+              >
+              <hr class="blog-line" />
+            </span>
+          </div>
+          <div class="blog-button offset-md-5 col-md-3 pt-md-2">
+            <a class="nav-link" href="#">
+              <span class="blog-knowmore">Know More</span>
+              <img class="px-2" src="assets/images/blog-knowmore.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-container container">
+        <div class="row">
+          <div class="blog-carousel col-12">
+            <div class="owl-carousel owl-theme" id="trends">
+              <!-- 1st  -->
+
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-1.png"
+                    alt="Image 2"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">22 Oct 2018</h5>
+                    <p class="blog-content">
+                      Struggling with Wood Rot and Decay? Here's How to Combat
+                      It!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-2.png"
+                    alt="Image 3"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">10 Jun 2018</h5>
+                    <p class="blog-content">
+                      Lackluster Wood Restoration? Revive Your Woodwork with
+                      these Expert Solutions!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-3.png"
+                    alt="Image 1"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">27 Oct 2018</h5>
+                    <p class="blog-content">
+                      How To Choose The Right Type of Wood for Your Project
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2nd  -->
+
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-1.png"
+                    alt="Image 2"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">22 Oct 2018</h5>
+                    <p class="blog-content">
+                      Struggling with Wood Rot and Decay? Here's How to Combat
+                      It!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-2.png"
+                    alt="Image 3"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">10 Jun 2018</h5>
+                    <p class="blog-content">
+                      Lackluster Wood Restoration? Revive Your Woodwork with
+                      these Expert Solutions!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-3.png"
+                    alt="Image 1"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">27 Oct 2018</h5>
+                    <p class="blog-content">
+                      How To Choose The Right Type of Wood for Your Project
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="owl-carousel owl-theme" id="inspirations">
+              <!-- 1st  -->
+
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-1.png"
+                    alt="Image 2"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">22 Oct 2018</h5>
+                    <p class="blog-content">
+                      Struggling with Wood Rot and Decay? Here's How to Combat
+                      It!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-2.png"
+                    alt="Image 3"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">10 Jun 2018</h5>
+                    <p class="blog-content">
+                      Lackluster Wood Restoration? Revive Your Woodwork with
+                      these Expert Solutions!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-3.png"
+                    alt="Image 1"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">27 Oct 2018</h5>
+                    <p class="blog-content">
+                      How To Choose The Right Type of Wood for Your Project
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2nd  -->
+
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-1.png"
+                    alt="Image 2"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">22 Oct 2018</h5>
+                    <p class="blog-content">
+                      Struggling with Wood Rot and Decay? Here's How to Combat
+                      It!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-2.png"
+                    alt="Image 3"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">10 Jun 2018</h5>
+                    <p class="blog-content">
+                      Lackluster Wood Restoration? Revive Your Woodwork with
+                      these Expert Solutions!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-3.png"
+                    alt="Image 1"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">27 Oct 2018</h5>
+                    <p class="blog-content">
+                      How To Choose The Right Type of Wood for Your Project
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="owl-carousel owl-theme" id="solutions">
+              <!-- 1st  -->
+
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-1.png"
+                    alt="Image 2"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">22 Oct 2018</h5>
+                    <p class="blog-content">
+                      Struggling with Wood Rot and Decay? Here's How to Combat
+                      It!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-2.png"
+                    alt="Image 3"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">10 Jun 2018</h5>
+                    <p class="blog-content">
+                      Lackluster Wood Restoration? Revive Your Woodwork with
+                      these Expert Solutions!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-3.png"
+                    alt="Image 1"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">27 Oct 2018</h5>
+                    <p class="blog-content">
+                      How To Choose The Right Type of Wood for Your Project
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2nd  -->
+
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-1.png"
+                    alt="Image 2"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">22 Oct 2018</h5>
+                    <p class="blog-content">
+                      Struggling with Wood Rot and Decay? Here's How to Combat
+                      It!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-2.png"
+                    alt="Image 3"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">10 Jun 2018</h5>
+                    <p class="blog-content">
+                      Lackluster Wood Restoration? Revive Your Woodwork with
+                      these Expert Solutions!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card blog-card">
+                  <img
+                    class="img-fluid blog-card-img"
+                    src="assets/images/blog1-3.png"
+                    alt="Image 1"
+                  />
+                  <div class="blog-card-body">
+                    <h5 class="blog-date">27 Oct 2018</h5>
+                    <p class="blog-content">
+                      How To Choose The Right Type of Wood for Your Project
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Guide - Section
+         -------------------------------------------------------------------------------------->
+    <div class="guide-container" id="guidance">
+      <div
+        class="container-fluid m-0 guide-bg"
+        style="background-image: url(assets/images/guide-bg.png)"
+      >
+        <div class="card p-5 guide-card">
+          <h1 class="guide-heading">
+            Get the right guidance to help you choose!
+          </h1>
+          <p class="guide-para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+          <div class="guide-icons">
+            <div>
+              <img
+                class="guide-icon"
+                alt=""
+                src="assets/images/paint-bucket.png"
+              />
+              <p class="g-icon-text">Choose the right product</p>
+            </div>
+            <div>
+              <img class="guide-icon" alt="" src="assets/images/info.png" />
+              <p class="g-icon-text">Application Guide</p>
+            </div>
+            <div>
+              <img class="guide-icon" alt="" src="assets/images/wood.png" />
+              <p class="g-icon-text">Know more about wood</p>
+            </div>
+          </div>
+          <div class="guide-button">
+            <button class="g-button">
+              Product Guide
+              <img
+                class="arrow-chevron-down-icon-guide"
+                alt=""
+                src="assets/images/arrow-long.svg"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Quality - Section
+         -------------------------------------------------------------------------------------->
+    <div class="container-fluid p-4" id="quality">
+      <div class="row justify-content-center py-4">
+        <div class="col-md-6">
+          <p class="quality-head">We take Pride in our Quality</p>
+          <p class="quality-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad
+            minim.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-3 justify-content-center">
+        <div class="col-md-8">
+          <div class="row justify-content-evenly">
+            <div class="col-6 col-md-3 text-center pb-5">
+              <img
+                src="assets/images/quality-icon1.png"
+                class="qaulity-icon"
+                alt=""
+              />
+              <span class="qaulity-icontext">High Transparency</span>
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5">
+              <img
+                src="assets/images/quality-icon2.png"
+                class="qaulity-icon"
+                alt=""
+              />
+              <span class="qaulity-icontext">Smoothness </span>
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5">
+              <img
+                src="assets/images/quality-icon3.png"
+                class="qaulity-icon"
+                alt=""
+              />
+              <span class="qaulity-icontext">Stain Repellant</span>
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5">
+              <img
+                src="assets/images/quality-icon4.png"
+                class="qaulity-icon"
+                alt=""
+              />
+              <span class="qaulity-icontext">Fast Drying</span>
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5">
+              <img
+                src="assets/images/quality-icon5.png"
+                class="qaulity-icon"
+                alt=""
+              />
+              <span class="qaulity-icontext">Excellent Durability</span>
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5">
+              <img
+                src="assets/images/quality-icon6.png"
+                class="qaulity-icon"
+                alt=""
+              />
+              <span class="qaulity-icontext">Water Repellant</span>
+            </div>
+            <div class="d-none d-md-block col-md-3 text-center pb-5">
+              <img
+                src="assets/images/quality-icon7.png"
+                class="qaulity-icon"
+                alt=""
+              />
+              <span class="qaulity-icontext">Scratch Resistant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Product - Section
+         -------------------------------------------------------------------------------------->
+    <div class="product-container container-fluid pb-4">
+      <div class="row">
+        <div class="col-12 m-auto product-carousel">
+          <div class="owl-carousel owl-theme" id="product">
+            <div class="item">
+              <div class="product-card card">
+                <img
+                  src="assets/images/clear-gloss.png"
+                  alt="clear-gloss"
+                  class="card-img"
+                />
+                <div class="product-card-body card-body">
+                  <div class="product-vertical-line"></div>
+                  <div class="number">01</div>
+                  <div class="product-card-img-container container">
+                    <img src="assets/images/daba.png" alt="Image" />
+                  </div>
+                  <h2 class="product-card-title card-title">
+                    Milesaway Italian PU Clear Gloss
+                  </h2>
+                  <p class="product-card-description card-description">
+                    Milesaway Italian PU Clear is a luxury Italian wood finish
+                    which gives an ultra-rich finish and excellent durability to
+                    wooden surfaces.
+                  </p>
+                  <div class="button-container-row row align-items-center">
+                    <div class="product-explore-button col-8">
+                      <div class="row button-text-row">
+                        <div class="col-7 button-text-col">Explore More</div>
+                        <div class="col-1 button-icon-col">
+                          <img src="assets/images/arrow-long.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="product-card card">
+                <img
+                  src="assets/images/clear-matt.png"
+                  alt="clear-gloss"
+                  class="card-img"
+                />
+                <div class="product-card-body card-body">
+                  <div class="product-vertical-line"></div>
+                  <div class="number">02</div>
+                  <div class="product-card-img-container container">
+                    <img src="assets/images/daba.png" alt="Image" />
+                  </div>
+                  <h2 class="product-card-title card-title">
+                    Milesaway Italian PU Clear Gloss
+                  </h2>
+                  <p class="product-card-description card-description">
+                    Milesaway Italian PU Clear is a luxury Italian wood finish
+                    which gives an ultra-rich finish and excellent durability to
+                    wooden surfaces.
+                  </p>
+                  <div class="button-container-row row align-items-center">
+                    <div class="product-explore-button col-8">
+                      <div class="row button-text-row">
+                        <div class="col-7 button-text-col">Explore More</div>
+                        <div class="col-1 button-icon-col">
+                          <img src="assets/images/arrow-long.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="product-card card">
+                <img
+                  src="assets/images/white-gloss.png"
+                  alt="clear-gloss"
+                  class="card-img"
+                />
+                <div class="product-card-body card-body">
+                  <div class="product-vertical-line"></div>
+                  <div class="number">03</div>
+                  <div class="product-card-img-container container">
+                    <img src="assets/images/daba.png" alt="Image" />
+                  </div>
+                  <h2 class="product-card-title card-title">
+                    Milesaway Italian PU Clear Gloss
+                  </h2>
+                  <p class="product-card-description card-description">
+                    Milesaway Italian PU Clear is a luxury Italian wood finish
+                    which gives an ultra-rich finish and excellent durability to
+                    wooden surfaces.
+                  </p>
+                  <div class="button-container-row row align-items-center">
+                    <div class="product-explore-button col-8">
+                      <div class="row button-text-row">
+                        <div class="col-7 button-text-col">Explore More</div>
+                        <div class="col-1 button-icon-col">
+                          <img src="assets/images/arrow-long.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="product-card card">
+                <img
+                  src="assets/images/white-matt.png"
+                  alt="clear-gloss"
+                  class="card-img"
+                />
+                <div class="product-card-body card-body">
+                  <div class="product-vertical-line"></div>
+                  <div class="number">04</div>
+                  <div class="product-card-img-container container">
+                    <img src="assets/images/daba.png" alt="Image" />
+                  </div>
+                  <h2 class="product-card-title card-title">
+                    Milesaway Italian PU Clear Gloss
+                  </h2>
+                  <p class="product-card-description card-description">
+                    Milesaway Italian PU Clear is a luxury Italian wood finish
+                    which gives an ultra-rich finish and excellent durability to
+                    wooden surfaces.
+                  </p>
+                  <div class="button-container-row row align-items-center">
+                    <div class="product-explore-button col-8">
+                      <div class="row button-text-row">
+                        <div class="col-7 button-text-col">Explore More</div>
+                        <div class="col-1 button-icon-col">
+                          <img src="assets/images/arrow-long.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2nd  -->
+
+            <div class="item">
+              <div class="product-card card">
+                <img
+                  src="assets/images/clear-gloss.png"
+                  alt="clear-gloss"
+                  class="card-img"
+                />
+                <div class="product-card-body card-body">
+                  <div class="product-vertical-line"></div>
+                  <div class="number">01</div>
+                  <div class="product-card-img-container container">
+                    <img src="assets/images/daba.png" alt="Image" />
+                  </div>
+                  <h2 class="product-card-title card-title">
+                    Milesaway Italian PU Clear Gloss
+                  </h2>
+                  <p class="product-card-description card-description">
+                    Milesaway Italian PU Clear is a luxury Italian wood finish
+                    which gives an ultra-rich finish and excellent durability to
+                    wooden surfaces.
+                  </p>
+                  <div class="button-container-row row align-items-center">
+                    <div class="product-explore-button col-8">
+                      <div class="row button-text-row">
+                        <div class="col-7 button-text-col">Explore More</div>
+                        <div class="col-1 button-icon-col">
+                          <img src="assets/images/arrow-long.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="product-card card">
+                <img
+                  src="assets/images/clear-matt.png"
+                  alt="clear-gloss"
+                  class="card-img"
+                />
+                <div class="product-card-body card-body">
+                  <div class="product-vertical-line"></div>
+                  <div class="number">02</div>
+                  <div class="product-card-img-container container">
+                    <img src="assets/images/daba.png" alt="Image" />
+                  </div>
+                  <h2 class="product-card-title card-title">
+                    Milesaway Italian PU Clear Gloss
+                  </h2>
+                  <p class="product-card-description card-description">
+                    Milesaway Italian PU Clear is a luxury Italian wood finish
+                    which gives an ultra-rich finish and excellent durability to
+                    wooden surfaces.
+                  </p>
+                  <div class="button-container-row row align-items-center">
+                    <div class="product-explore-button col-8">
+                      <div class="row button-text-row">
+                        <div class="col-7 button-text-col">Explore More</div>
+                        <div class="col-1 button-icon-col">
+                          <img src="assets/images/arrow-long.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="product-card card">
+                <img
+                  src="assets/images/white-gloss.png"
+                  alt="clear-gloss"
+                  class="card-img"
+                />
+                <div class="product-card-body card-body">
+                  <div class="product-vertical-line"></div>
+                  <div class="number">03</div>
+                  <div class="product-card-img-container container">
+                    <img src="assets/images/daba.png" alt="Image" />
+                  </div>
+                  <h2 class="product-card-title card-title">
+                    Milesaway Italian PU Clear Gloss
+                  </h2>
+                  <p class="product-card-description card-description">
+                    Milesaway Italian PU Clear is a luxury Italian wood finish
+                    which gives an ultra-rich finish and excellent durability to
+                    wooden surfaces.
+                  </p>
+                  <div class="button-container-row row align-items-center">
+                    <div class="product-explore-button col-8">
+                      <div class="row button-text-row">
+                        <div class="col-7 button-text-col">Explore More</div>
+                        <div class="col-1 button-icon-col">
+                          <img src="assets/images/arrow-long.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="product-card card">
+                <img
+                  src="assets/images/white-matt.png"
+                  alt="clear-gloss"
+                  class="card-img"
+                />
+                <div class="product-card-body card-body">
+                  <div class="product-vertical-line"></div>
+                  <div class="number">04</div>
+                  <div class="product-card-img-container container">
+                    <img src="assets/images/daba.png" alt="Image" />
+                  </div>
+                  <h2 class="product-card-title card-title">
+                    Milesaway Italian PU Clear Gloss
+                  </h2>
+                  <p class="product-card-description card-description">
+                    Milesaway Italian PU Clear is a luxury Italian wood finish
+                    which gives an ultra-rich finish and excellent durability to
+                    wooden surfaces.
+                  </p>
+                  <div class="button-container-row row align-items-center">
+                    <div class="product-explore-button col-8">
+                      <div class="row button-text-row">
+                        <div class="col-7 button-text-col">Explore More</div>
+                        <div class="col-1 button-icon-col">
+                          <img src="assets/images/arrow-long.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Assistance - Section
+         -------------------------------------------------------------------------------------->
+    <div class="container-fluid assistance-container">
+      <div class="row align-items-center">
+        <div class="col-md-4 offset-md-1 p-4">
+          <p class="assistance-head">
+            Get the right assistance for all your painting needs
+          </p>
+          <p class="assistance-text">
+            Fill the form below to book a free site evaluation by an Milesaway
+            Safe Painting Service expert.
+          </p>
+          <div class="assistance-headsection">
+            <span class="assistance-drops">
+              <img
+                src="assets/images/assistance-drops.png"
+                class="img-fluid sol-img"
+                alt=""
+              />
+            </span>
+            <p class="assistance-texthead pt-4">Solution 1</p>
+          </div>
+          <p class="assistance-text-para">
+            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Vorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Vorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Vorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
+          <div class="assistance-headsection">
+            <span class="assistance-drops">
+              <img
+                src="assets/images/assistance-drops.png"
+                class="img-fluid sol-img"
+                alt=""
+              />
+            </span>
+            <p class="assistance-texthead pt-4">Solution 2</p>
+          </div>
+          <p class="assistance-text-para">
+            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Vorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Vorem ipsum dolor sit
+            amet, consectetur
+          </p>
+        </div>
+        <div class="col-11 col-sm-8 col-md-6 col-lg-3 assistance-floatingform">
+          <form action="" method="" class="shadow assistance-form p-4">
+            <p class="assistance-fromhead">A step closer to your dream</p>
+            <p class="assistance-formtext">
+              Vorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="assistance-inputs">
+              <div class="assistance-inputcontainer">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  autocomplete="off"
+                />
+                <label
+                  class="assistance-placeholder"
+                  for="exampleFormControlInput1"
+                  >First Name</label
+                >
+              </div>
+              <div class="assistance-inputcontainer">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  autocomplete="off"
+                />
+                <label
+                  class="assistance-placeholder"
+                  for="exampleFormControlInput1"
+                  >Mobile Number</label
+                >
+              </div>
+              <div class="assistance-inputcontainer">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  autocomplete="off"
+                />
+                <label
+                  class="assistance-placeholder"
+                  for="exampleFormControlInput1"
+                  >Email</label
+                >
+              </div>
+              <select
+                class="assistance-inp rounded p-2 assistance-placeholder"
+                id="roleSelect1"
+              >
+                <option>I am</option>
+                <option>Wholeseller</option>
+                <option>Retailer</option>
+                <option>Customer</option>
+              </select>
+              <select
+                class="assistance-inp rounded p-2 assistance-placeholder"
+                id="helpSelect1"
+              >
+                <option>Need help with</option>
+                <option>Product</option>
+                <option>Location</option>
+              </select>
+              <div class="assistance-inputcontainer">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder=""
+                  rows="3"
+                  autocomplete="off"
+                ></textarea>
+                <label
+                  class="assistance-placeholder"
+                  for="exampleFormControlInput1"
+                  >Message</label
+                >
+              </div>
+            </div>
+
+            <p class="assistance-formtext">
+              Vorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="text-center">
+              <button class="btn border assistance-btn mt-2">
+                <span class="assistance-btntext">Submit Details</span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-5 offset-md-2 p-0">
+          <img
+            src="assets/images/assistance.png"
+            class="img-fluid assistance-image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Tools - Section
+         -------------------------------------------------------------------------------------->
+    <div
+      class="tool-container container-fluid"
+      id="tools"
+      style="background-image: url(assets/images/tool-log-img.png)"
+    >
+      <div class="row align-items-center align-items-center">
+        <div class="col-md-5 tool-text">
+          <h1 class="tool-heading">Leverage the Power of</h1>
+          <h1 class="tool-subheading">Milesaway Tools</h1>
+          <p class="tool-para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut eiusmod labore et dolore magna.
+          </p>
+        </div>
+        <div class="col-md-7">
+          <div class="row align-items-center m-md-3">
+            <div class="tool-img col-md-6">
+              <img
+                class="tool-main-img img-fluid"
+                src="assets/images/tool-paint.png"
+                alt=""
+              />
+              <img
+                class="tool-icon-img img-fluid"
+                src="assets/images/tool-icon1.png"
+                alt=""
+              />
+            </div>
+            <div class="tool-card col-md-6">
+              <h3 class="tool-img-heading">Shade Cards</h3>
+              <p class="tool-img-para">
+                More than 2200 shades in our colour palette. Find the right one
+                for your walls.
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center m-md-3">
+            <div class="tool-img col-md-6">
+              <img
+                class="tool-main-img img-fluid"
+                src="assets/images/tool-chair.png"
+                alt=""
+              />
+              <img
+                class="tool-icon-img img-fluid"
+                src="assets/images/tool-icon2.png"
+                alt=""
+              />
+            </div>
+            <div class="tool-card col-md-6">
+              <h3 class="tool-img-heading">Visualizer</h3>
+              <p class="tool-img-para">
+                More than 2200 shades in our colour palette. Find the right one
+                for your walls.
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center m-md-3">
+            <div class="tool-img col-md-6">
+              <img
+                class="tool-main-img img-fluid"
+                src="assets/images/tool-calc.png"
+                alt=""
+              />
+              <img
+                class="tool-icon-img img-fluid"
+                src="assets/images/tool-icon3.png"
+                alt=""
+              />
+            </div>
+            <div class="tool-card col-md-6">
+              <h3 class="tool-img-heading">Calculators</h3>
+              <p class="tool-img-para">
+                More than 2200 shades in our colour palette. Find the right one
+                for your walls.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+            Expert - Section
+            -------------------------------------------------------------------------------------->
+    <div class="expert-container container-fluid my-5">
+      <div class="expert-main-heading text-md-center">
+        <h1 class="expert-heading">Get Expert Help at Your Convenience</h1>
+        <p class="expert-sub-heading">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad
+          minim veniam.
+        </p>
+      </div>
+
+      <!-- expert-desk -->
+      <div class="container expert-desk">
+        <section>
+          <article class="expertarticle article">
+            <img src="assets/images/dealer.jpg" alt="Dealers" />
+            <div class="container"></div>
+            <div class="expert-content">
+              <h2 class="expert-content-heading">Dealers</h2>
+              <p class="expert-content-paragraph">
+                This project required a huge amount of hours but sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna.
+              </p>
+              <button class="expert-button">Explore More</button>
+            </div>
+          </article>
+          <article class="expertarticle article">
+            <img
+              src="assets/images/Paintcontractors.jpg"
+              alt="Paint contractors"
+            />
+            <div class="expert-content">
+              <h2 class="expert-content-heading">Paint Contractors</h2>
+              <p class="expert-content-paragraph">
+                This project required a huge amount of hours but sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna.
+              </p>
+              <button class="expert-button">Explore More</button>
+            </div>
+          </article>
+          <article class="expertarticle article">
+            <img src="assets/images/Site-visit.jpg" alt="Site visit" />
+            <div class="expert-content">
+              <h2 class="expert-content-heading">Site Visit</h2>
+              <p class="expert-content-paragraph">
+                This project required a huge amount of hours but sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna.
+              </p>
+              <button class="expert-button">Explore More</button>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <!-- expert-mbl -->
+      <div class="row expert-mbl">
+        <div class="col-12 m-auto expert-carousel">
+          <div class="owl-carousel owl-theme" id="expert">
+            <div class="item mb-4">
+              <div class="expert-card card">
+                <img
+                  src="assets/images/dealer.jpg"
+                  alt="dealer"
+                  class="product-card-img"
+                />
+                <div class="product-card-body card-body">
+                  <h2 class="product-card-title card-title">
+                    Paint Contractors
+                  </h2>
+                  <p class="product-card-description card-description">
+                    his project required a huge amount of hours but sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna.
+                  </p>
+                  <div class="expert-button-container row align-items-center">
+                    <div class="explore-button col-9">
+                      <div class="row expert-button-row">
+                        <div class="col-10 expert-button-text-col">
+                          Explore More
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="expert-card card">
+                <img
+                  src="assets/images/Paintcontractors.jpg"
+                  alt="clear-gloss"
+                  class="product-card-img"
+                />
+                <div class="product-card-body card-body">
+                  <h2 class="product-card-title card-title">
+                    Paint Contractors
+                  </h2>
+                  <p class="product-card-description card-description">
+                    his project required a huge amount of hours but sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna.
+                  </p>
+                  <div class="expert-button-container row align-items-center">
+                    <div class="explore-button col-9">
+                      <div class="row expert-button-row">
+                        <div class="col-10 expert-button-text-col">
+                          Explore More
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="expert-card card">
+                <img
+                  src="assets/images/Site-visit.jpg"
+                  alt="clear-gloss"
+                  class="product-card-img"
+                />
+                <div class="product-card-body card-body">
+                  <h2 class="product-card-title card-title">Site Visit</h2>
+                  <p class="product-card-description card-description">
+                    This project required a huge amount of hours but sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna.
+                  </p>
+                  <div class="expert-button-container row align-items-center">
+                    <div class="explore-button col-9">
+                      <div class="row expert-button-row">
+                        <div class="col-10 expert-button-text-col">
+                          Explore More
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Register - Section
+         -------------------------------------------------------------------------------------->
+    <div class="container register-cont">
+      <div
+        class="register-bg p-4"
+        style="background: url(assets/images/register-bg.png)"
+      >
+        <div class="row">
+          <div class="col col-md-9">
+            <h1 class="register-heading">Expand your business with Milesaway!</h1>
+            <p class="register-para">
+              Become an Milesaway partner by registering on the platform to get
+              more clients
+            </p>
+          </div>
+          <div class="col-md-3">
+            <button class="register-main-btn">
+              <div class="register-btn">Register now</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Testimonials - Section
+         -------------------------------------------------------------------------------------->
+    <div class="testimonial-container container-fluid mt-5" id="testimonial">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="testimonial-heading">Why people love Milesaway</h1>
+          <p class="testimonial-subheading my-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad
+            minim veniam.
+          </p>
+        </div>
+
+        <div class="col-12 m-auto testimonials-carousel">
+          <div class="owl-carousel owl-theme" id="testimonials">
+            <div class="item mb-4 p-md-0">
+              <div class="card border-0 shadow">
+                <div class="testimonial-card">
+                  <div class="container testimonial-cont">
+                    <div class="row">
+                      <div class="col-12 testimonial-text">
+                        OMG! I cannot believe that I have got a brand new
+                        landing page after getting appmax. It was super easy to
+                        edit and publish.I have got a brand new landing page.
+                      </div>
+                    </div>
+                    <div class="row align-items-center testimonial-row-data">
+                      <div class="col-2 col-md-1">
+                        <img
+                          src="assets/images/profile-pic-female.png"
+                          alt="Profile Picture"
+                          class="testimonial-prof img-fluid rounded-circle"
+                        />
+                      </div>
+                      <div class="col-6 col-md-6">
+                        <h3 class="testimonial-name">John Doe</h3>
+                        <p class="testimonial-role">Software Engineer</p>
+                      </div>
+                      <div class="col-4 col-md-4 stars">
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item mb-4 p-md-0">
+              <div class="card border-0 shadow">
+                <div class="testimonial-card">
+                  <div class="container testimonial-cont">
+                    <div class="row">
+                      <div class="col-12 testimonial-text">
+                        OMG! I cannot believe that I have got a brand new
+                        landing page after getting appmax. It was super easy to
+                        edit and publish.I have got a brand new landing page.
+                      </div>
+                    </div>
+                    <div class="row align-items-center testimonial-row-data">
+                      <div class="col-2 col-md-1">
+                        <img
+                          src="assets/images/profile-pic-female.png"
+                          alt="Profile Picture"
+                          class="testimonial-prof img-fluid rounded-circle"
+                        />
+                      </div>
+                      <div class="col-6 col-md-6">
+                        <h3 class="testimonial-name">John Doe</h3>
+                        <p class="testimonial-role">Software Engineer</p>
+                      </div>
+                      <div class="col-4 col-md-4 stars">
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item mb-4 p-md-0">
+              <div class="card border-0 shadow">
+                <div class="testimonial-card">
+                  <div class="container testimonial-cont">
+                    <div class="row">
+                      <div class="col-12 testimonial-text">
+                        OMG! I cannot believe that I have got a brand new
+                        landing page after getting appmax. It was super easy to
+                        edit and publish.I have got a brand new landing page.
+                      </div>
+                    </div>
+                    <div class="row align-items-center testimonial-row-data">
+                      <div class="col-2 col-md-1">
+                        <img
+                          src="assets/images/profile-pic-female.png"
+                          alt="Profile Picture"
+                          class="testimonial-prof img-fluid rounded-circle"
+                        />
+                      </div>
+                      <div class="col-6 col-md-6">
+                        <h3 class="testimonial-name">John Doe</h3>
+                        <p class="testimonial-role">Software Engineer</p>
+                      </div>
+                      <div class="col-4 col-md-4 stars">
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item mb-4 p-md-0">
+              <div class="card border-0 shadow">
+                <div class="testimonial-card">
+                  <div class="testimonial-cont container">
+                    <div class="row">
+                      <div class="col-12 testimonial-text">
+                        OMG! I cannot believe that I have got a brand new
+                        landing page after getting appmax. It was super easy to
+                        edit and publish.I have got a brand new landing page.
+                      </div>
+                    </div>
+                    <div class="row align-items-center testimonial-row-data">
+                      <div class="col-2 col-md-1">
+                        <img
+                          src="assets/images/profile-pic-female.png"
+                          alt="Profile Picture"
+                          class="testimonial-prof img-fluid rounded-circle"
+                        />
+                      </div>
+                      <div class="col-6 col-md-6">
+                        <h3 class="testimonial-name">John Doe</h3>
+                        <p class="testimonial-role">Software Engineer</p>
+                      </div>
+                      <div class="col-4 col-md-4 stars">
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Form2 - Section
+         -------------------------------------------------------------------------------------->
+    <div class="form2-bg">
+      <div class="form2-bg-container container">
+        <div class="form2-container">
+          <form class="container form-box-cont bg-dangr rounded-bottom">
+            <div class="row">
+              <div class="form-col col-md-6 form2-gap1">
+                <div class="form2-group">
+                  <label for="first-name"
+                    >Hello, my first name is
+                    <span class="required"> *</span></label
+                  >
+                  <input
+                    class="form2-placeholder placeholder"
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                    placeholder=" First Name"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="form-col ls-form-fi col-md-6 form2-gap2">
+                <div class="form2-group">
+                  <label for="last-name">My last name is </label>
+                  <input
+                    class="form2-placeholder placeholder"
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder=" Last Name"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <!-- <div class="row"> -->
+              <div class="form-col col-md-6 form2-gap1">
+                <div class="form2-group">
+                  <label for="contact"
+                    >Contact me on <span class="required"> *</span></label
+                  >
+                  <input
+                    class="form2-placeholder placeholder"
+                    type="text"
+                    id="contact"
+                    name="contact"
+                    required
+                    placeholder=" Contact Number"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="form-col ls-form-fi col-md-6 form2-gap2">
+                <div class="form2-group">
+                  <label for="email"
+                    >Mail me at <span class="required"> *</span></label
+                  >
+                  <input
+                    class="form2-placeholder placeholder"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder=" Email ID"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="form3-group">
+                <label for="identity"
+                  >Who am I<span class="required"> *</span></label
+                >
+                <div class="custom-select">
+                  <select id="identity" name="identity" required>
+                    <option class="opt" value="">My Background</option>
+                    <option class="opt" value="student">Student</option>
+                    <option class="opt" value="teacher">Teacher</option>
+                    <option class="opt" value="professional">
+                      Professional
+                    </option>
+                    <option class="opt" value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <!-- <div class="form3-group">
+                <label for="identity"
+                  >Who am I<span class="required"> *</span></label
+                >
+                <select id="identity" name="identity" required>
+                  <option class="opt" value="">My Background</option>
+                  <option class="opt" value="student">Student</option>
+                  <option class="opt" value="teacher">Teacher</option>
+                  <option class="opt" value="professional">Professional</option>
+                  <option class="opt" value="other">Other</option>
+                </select>
+              </div> -->
+              <div class="form3-group">
+                <label for="purpose"
+                  >Purpose<span class="required"> *</span></label
+                >
+                <select id="purpose" name="purpose" required>
+                  <option value="">I need help with</option>
+                  <option value="inquiry">Inquiry</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="support">Support</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form2-group">
+                <label for="pin-code">Pin Code</label>
+                <input
+                  class="form2-placeholder placeholder"
+                  type="text"
+                  id="pin-code"
+                  name="pin-code"
+                  placeholder=" My area code"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form2-group">
+                <label for="message">What do you want to tell us ?</label>
+                <input
+                  class="form2-placeholder placeholder"
+                  type="text"
+                  id="message"
+                  name="message"
+                  placeholder=" type a message "
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form2-button-main">
+                <button class="form2-button">submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Footer - Section
+         -------------------------------------------------------------------------------------->
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-main">
+          <div class="footer-column col-lg-4 col-12">
+            <div class="footer-logos mt-4">
+            
+              <img
+                class="footer-logo2"
+                src="assets/images/footer-aw-logo.png"
+                alt="Brand Logo"
+              />
+            </div>
+            <div class="footer-description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniamquis.
+              </p>
+            </div>
+            <div class="social-icons">
+              <a class="social-icon" href="#">
+                <img src="assets/images/fb-logo.png" alt="Facebook" />
+              </a>
+              <a class="social-icon" href="#">
+                <img src="assets/images/insta-logo.png" alt="Instagram" />
+              </a>
+              <a class="social-icon" href="#">
+                <img src="assets/images/twitter-logo.png" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-1"></div>
+
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-lg-2"></div>
+
+              <div class="footer-link col-lg-2 col-6">
+                <ul class="footer-links">
+                  <li class="footer-head">Quick Links</li>
+                  <li><a href="/about-us">About Us</a></li>
+                  <li><a href="/faqs">FAQs</a></li>
+                  <li><a href="/contact-us">Contact Us</a></li>
+                  <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="footer-link col-lg-3 px-lg-4 col-6">
+                <ul class="footer-links">
+                  <li class="footer-head">Products</li>
+                  <li>
+                    <a class="footer-a" href="/product-listing"
+                      >Milesaway Itallian PU</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-a" href="/product-listing"
+                      >Milesaway Thinners</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-a" href="/product-listing"
+                      >Milesaway Insulators</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="footer-link col-lg-1 col-4">
+                        <ul class="footer-links">
+                          <li class="footer-head">Tools</li>
+                          <li><a href="#">Store Locator</a></li>
+                          <li><a href="#">Find a Contractor</a></li>
+                          <li><a href="#">Shade Cards</a></li>
+                          <li><a href="#">Visualizer</a></li>
+                          <li><a href="#">Calculators</a></li>
+                        </ul>
+                      </div> -->
+              <div class="footer-link col-lg-2 col-6">
+                <ul class="footer-links">
+                  <li class="footer-head">Content</li>
+                  <li><a href="/blog-listing">Inspirations</a></li>
+                  <li><a href="/blog-listing">Education</a></li>
+                  <li><a href="/blog-listing">Trends</a></li>
+                </ul>
+              </div>
+              <!-- <div class="footer-link col-lg-2 col-8">
+                        <ul class="footer-links">
+                          <li class="footer-head">Store Locator</li>
+                          <li><a href="#">Link 2</a></li>
+                          <br />
+                          <li>Find a Contractor</li>
+                          <li><a href="#">Link 5</a></li>
+                        </ul>
+                      </div> -->
+              <div class="footer-link col-lg-3 col-6">
+                <ul class="footer-links">
+                  <li class="footer-head">Contact Us</li>
+                  <li><a href="#">info@form.com</a></li>
+                  <li>
+                    <a href="#"
+                      >Helpline : 1800 120 6787 <br />
+                      6116 Willa River Suite 610</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="footer-terms-row row p-2">
+          <div class="col-5 col-lg-3 text-center">Terms and condition</div>
+          <div class="col-lg-5 d-none d-lg-block"></div>
+          <div class="col-7 col-lg-4 text-center">
+            ©2023 Milesaway | All right reserve
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- OwlCarousel js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

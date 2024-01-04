@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+    .blog-head{
+        color: var(--brown-primary, #8D4F1F);
+
+        /* Header/36px: Regular */
+        font-family: Kugile;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 64px;
+    }
+    .blog-text{
+        color: var(--neutral-neutral-600, #4B5563);
+
+        /* Body/23px: Regular */
+        font-family: Red Hat Display;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    .blog-link, .blog-link:visited {
+        color: var(--neutral-neutral-400, #9ca3af);
+
+        /* Body/18px: Regular */
+        font-family: Red Hat Display;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        }
+
+    .blog-link:hover, .blog-link:active, .blog-link.active {
+        color: var(--orange-primary, #f3922b);
+
+        /* Body/18px: Bold */
+        font-family: Red Hat Display;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+
+        text-decoration: underline;
+        text-decoration-thickness: 15%;
+        text-underline-offset: 1.4rem;
+      }
+      .blog-knowmore{
+        /* background: var(--button-gradient, linear-gradient(90deg, #AC5821 0%, #E1722A 100%)); */
+        background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(90deg, #AC5821 0%, #E1722A 100%);
+        /* text-align: right; */
+      }
+      .card {
+        border: none;
+      }
+      .blog-card {
+        width: 360px;
+        height: 400px;
+        margin-bottom: 20px;
+        border: none;
+        margin-top: 30px;
+      }
+      .card-img-top{
+        width: 378px;
+        height: 278px;
+        flex-shrink: 0;
+      }
+      .blog-date{
+        color: var(--neutral-neutral-400, #9CA3AF);
+
+        /* Body/14px: Regular */
+        font-family: Red Hat Display;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .blog-content{
+        color: var(--neutral-neutral-700, #374151);
+
+        /* Body/18px: Medium */
+        font-family: Red Hat Display;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+      }
+      .blog-button{
+        text-align: right;
+      }
+      .blog-button1{
+        position: absolute;
+        top: 180px;
+        left: -50px;
+        padding: 4px;
+        border-radius: 50%;
+    }
+    .blog-button2{
+        position: absolute;
+        top: 180px;
+        right: -40px;
+        padding: 0px;
+        border-radius: 50%;
+      }
+      @media (max-width: 768px) {
+        .blog-links{
+            position: relative;
+        }
+        .blog-button{
+            position: absolute;
+            text-align: left;
+            top: 75vh;
+            z-index: 99;
+        }
+        .carousel-inner {
+        overflow-x: auto;
+      }
+
+      }
+
+  </style>  
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <h1 class="blog-head">Blogs & Articles</h1>
+            <p class="blog-text">Get to know the best stories sit amet, consectetur adipisicing elit, sed
+                do eiusmod temporize</p>
+        </div>
+
+        <div class="blog-links row justify-content-between px-3">
+            <div class="col-11 col-md-5">
+                <span class="row">
+                    <a id="inspirations-link" class="nav-link blog-link col-4 py-3 border-bottom" href="#">Inspirations</a>
+                    <a id="solutions-link" class="nav-link blog-link col-4 py-3 border-bottom" href="#">Solutions</a>
+                    <a id="trends-link" class="nav-link blog-link col-2 py-3 border-bottom" href="#">Trends</a>
+
+                </span>
+
+            </div>
+            <div class="blog-button offset-md-3 col-md-3 py-2">
+                <a class="nav-link " href="#">
+                    <span class="blog-knowmore">Know More</span>
+                    <img class="px-2" src="assets/blog-knowmore.png" alt="">
+                </a>
+            </div>
+          </div>
+
+          
+          <div id="blog-slider" class="carousel slide">
+            <div id="blog-remove-slider" class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-evenly py-3">
+
+                  <div class="col-md-4 px-3">
+
+                    <div class="card blog-card">
+                      <img class="img-fluid card-img-top" src="assets/blog1-1.png" alt="Image 1" />
+                      <div class="card-body">
+                        <h5 class="blog-date">27 Oct 2018</h5>
+                        <p class="blog-content">How To Choose The Right Type of Wood for Your Project</p>
+                      </div>
+                    </div>
+
+
+                  </div>
+          
+                  <div class="col-md-4 px-4">
+
+
+                    <div class="card blog-card">
+                      <img class="img-fluid card-img-top" src="assets/blog1-2.jpg" alt="Image 2" />
+                      <div class="card-body">
+                        <h5 class="blog-date">22 Oct 2018</h5>
+                        <p class="blog-content">Struggling with Wood Rot and Decay? Here's How to Combat It!</p>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-4 px-4">
+
+                    <div class="card blog-card">
+                      <img class="img-fluid card-img-top" src="assets/blog1-3.png" alt="Image 3" />
+                      <div class="card-body">
+                        <h5 class="blog-date">10 Jun 2018</h5>
+                        <p class="blog-content">Lackluster Wood Restoration? Revive Your Woodwork with these Expert Solutions!</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+          
+              <div class="carousel-item">
+                <div class="row justify-content-evenly py-3">
+                  <div class="col-md-4 px-3">
+                    <div class="card blog-card">
+                      <img class="img-fluid card-img-top" src="assets/blog1-3.png" alt="Image 4" />
+                      <div class="card-body">
+                        <h5 class="blog-date">15 Dec 2019</h5>
+                        <p class="blog-content">The Benefits of Using Recycled Materials in Construction</p>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-4 px-4">
+                    <div class="card blog-card">
+                      <img class="img-fluid card-img-top" src="assets/blog1-2.jpg" alt="Image 5" />
+                      <div class="card-body">
+                        <h5 class="blog-date">10 Nov 2019</h5>
+                        <p class="blog-content">Tips for Designing an Eco-Friendly Home</p>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-4 px-4">
+                    <div class="card blog-card">
+                      <img class="img-fluid card-img-top" src="assets/blog1-1.png" alt="Image 6" />
+                      <div class="card-body">
+                        <h5 class="blog-date">5 Sep 2019</h5>
+                        <p class="blog-content">Creating Sustainable Landscapes: Key Principles to Follow</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row justify-content-evenly py-3">
+                  <div class="col-md-4 px-3">
+                    <div class="card blog-card">
+                      <img class="img-fluid card-img-top" src="assets/blog1-1.png" alt="Image 4" />
+                      <div class="card-body">
+                        <h5 class="blog-date">15 Dec 2019</h5>
+                        <p class="blog-content">The Benefits of Using Recycled Materials in Construction</p>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-4 px-4">
+                    <div class="card blog-card">
+                      <img class="img-fluid card-img-top" src="assets/blog1-3.png" alt="Image 5" />
+                      <div class="card-body">
+                        <h5 class="blog-date">10 Nov 2019</h5>
+                        <p class="blog-content">Tips for Designing an Eco-Friendly Home</p>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-4 px-4">
+                    <div class="card blog-card">
+                      <img class="img-fluid card-img-top" src="assets/blog1-2.jpg" alt="Image 6" />
+                      <div class="card-body">
+                        <h5 class="blog-date">5 Sep 2019</h5>
+                        <p class="blog-content">Creating Sustainable Landscapes: Key Principles to Follow</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#blog-slider" data-bs-slide="prev">
+              <span class="blog-button1 carousel-control-prev-icon" aria-hidden="true"><img src="assets/left-button.png"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#blog-slider" data-bs-slide="next">
+              <span class="blog-button2 carousel-control-next-icon" aria-hidden="true"><img src="assets/right-button.png"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+                    
+
+
+    </div>
+    <script>
+        // Get the carousel element
+        var carousel = document.getElementById("blog-slider");
+      
+        // Get the category links
+        var inspirationsLink = document.getElementById("inspirations-link");
+        var solutionsLink = document.getElementById("solutions-link");
+        var trendsLink = document.getElementById("trends-link");
+      
+        // Add click event listeners to the category links
+        inspirationsLink.addEventListener("click", function () {
+          // Show the first slide
+          carousel.querySelector(".carousel-item:nth-child(1)").classList.add("active");
+          carousel.querySelector(".carousel-item:nth-child(2)").classList.remove("active");
+          carousel.querySelector(".carousel-item:nth-child(3)").classList.remove("active");
+        });
+      
+        solutionsLink.addEventListener("click", function () {
+          // Show the second slide
+          carousel.querySelector(".carousel-item:nth-child(1)").classList.remove("active");
+          carousel.querySelector(".carousel-item:nth-child(2)").classList.add("active");
+          carousel.querySelector(".carousel-item:nth-child(3)").classList.remove("active");
+        });
+      
+        trendsLink.addEventListener("click", function () {
+          // Show the third slide
+          carousel.querySelector(".carousel-item:nth-child(1)").classList.remove("active");
+          carousel.querySelector(".carousel-item:nth-child(2)").classList.remove("active");
+          carousel.querySelector(".carousel-item:nth-child(3)").classList.add("active");
+        });
+      </script>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

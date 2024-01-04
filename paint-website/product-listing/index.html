@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-links -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kugile:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Red Hat Display:wght@300;400;500;700&display=swap"
+    />
+
+    <!-- font-awesome search-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- OwlCarousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/style.css" />
+
+    <title>Product Listing</title>
+  </head>
+  <body>
+    <!------------------------------------------------------------------------------------ 
+        Navbar - Section
+        -------------------------------------------------------------------------------------->
+    <nav id="navbar" class="navbar navbar-expand-lg nav-fix">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+        
+          <img
+            src="../assets/images/aw-logo-brown.png"
+            class="nav-show img-fluid aw-logo mx-2"
+            alt=""
+          />
+          <img
+            src="../assets/images/header-aw-logo.png"
+            class="nav-hide img-fluid aw-logo mx-2"
+            alt=""
+          />
+        </a>
+        <div
+          id="navbarToggler"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <img
+              class="nav-show"
+              id="navOpen"
+              src="../assets/images/menu-black.png"
+              alt=""
+            />
+            <img class="nav-hide" src="../assets/images/nav-open.png" alt="" />
+            <img id="navClose" src="../assets/images/nav-close.png" alt="" />
+          </span>
+        </div>
+
+        <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-lg-none col-7">
+            <div class="search-bar">
+              <div class="search-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <input type="text" class="search-input" placeholder="Search" />
+            </div>
+
+            <div class="mbl-result p-4">
+              <div class="result-page">
+                <div class="result-title">Product</div>
+                <div class="result-subtitle">
+                  Milesaway Italian PU Clear
+                  <span class="result-word">Gloss</span>
+                </div>
+                <div class="result-subtitle">
+                  Milesaway Italian PU Clear
+                  <span class="result-word">Gloss</span>
+                </div>
+              </div>
+              <div class="result-page mt-3">
+                <div class="result-title">Blogs & Articles</div>
+                <div class="result-subtitle">
+                  How to protect wood
+                  <span class="result-word">Gloss</span> during monsoon
+                </div>
+                <div class="result-subtitle">
+                  3 best ways to retain the wood
+                  <span class="result-word">Gloss</span> with Milesaway paints
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="navbar-links">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/blog-listing">Inspiration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/product-listing">Product</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/about-us">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/contact-us">Contact Us</a>
+              </li>
+
+              <li class="nav-item d-none d-lg-block search-icon-wrapper">
+                <a class="nav-link" href="#">
+                  <img
+                    class="nav-show"
+                    src="../assets/images/search-black.png"
+                    alt=""
+                  />
+                  <img
+                    class="nav-hide"
+                    src="../assets/images/nav-search.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="container">
+            <div class="row">
+              <input
+                class="nav-search form-control rounded-pill me-2 ba-searchbar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                style="
+                  background: var(--neutral-neutral-50, #f9fafb)
+                    url('../assets/images/search-black.png') no-repeat 10px
+                    center;
+                "
+              />
+
+              <div
+                class="nav-search form-control py-4 mt-5 desk-searchbar result-container"
+                style="width: 48%"
+              >
+                <div class="result-page">
+                  <div class="result-title">Product</div>
+                  <div class="result-subtitle">
+                    Milesaway Italian PU Clear
+                    <span class="result-word">Gloss</span>
+                  </div>
+                  <div class="result-subtitle">
+                    Milesaway Italian PU Clear
+                    <span class="result-word">Gloss</span>
+                  </div>
+                </div>
+                <div class="result-page mt-3">
+                  <div class="result-title">Blogs & Articles</div>
+                  <div class="result-subtitle">
+                    How to protect wood
+                    <span class="result-word">Gloss</span> during monsoon
+                  </div>
+                  <div class="result-subtitle">
+                    3 best ways to retain the wood
+                    <span class="result-word">Gloss</span> with Milesaway paints
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------------------------------------------------------------------------ 
+         Banner - Section
+         -------------------------------------------------------------------------------------->
+    <div
+      id="carouselExampleIndicators"
+      class="prodList-banner"
+      style="background-image: url('../assets/images/productList-banner.png')"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="prodList-heading">Product Catalogue</h1>
+          </div>
+          <div class="col-md-4">
+            <p class="prodList-para">
+              Browse through our captivating array of premium wood finishes in
+              this meticulously curated catalogue! Discover an inspiring variety
+              created with passion and precision.
+              <!-- Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+      Form1 - Section
+      -------------------------------------------------------------------------------------->
+    <div class="container-fluid form1-container mt-5">
+      <div class="row justify-content-evenly">
+        <div class="col-lg-12 form1-head">A step closer to your dream</div>
+        <div class="col-lg-12 form1-text">
+          Vorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+      </div>
+      <div class="row form1-inputlist pt-3">
+        <div class="col-lg-2">
+          <div class="form1-inputcontainer">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              autocomplete="off"
+            />
+            <label for="exampleFormControlInput1">Name</label>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="form1-inputcontainer">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput2"
+              autocomplete="off"
+            />
+            <label for="exampleFormControlInput2">Number</label>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <select
+            class="form1-inp rounded p-2 form1-placeholder"
+            id="roleSelect"
+          >
+            <option>I am</option>
+            <option>Wholeseller</option>
+            <option>Retailer</option>
+            <option>Customer</option>
+          </select>
+        </div>
+        <div class="col-lg-2">
+          <select
+            class="form1-inp rounded p-2 form1-placeholder"
+            id="helpSelect"
+          >
+            <option>Need help with</option>
+            <option>Product</option>
+            <option>Location</option>
+          </select>
+        </div>
+        <div class="col-lg-2">
+          <button class="col-12 btn form1-contact px-4">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------
+        ProductListing - Section    
+        -------------------------------------------------------------------------------------->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="aw-productHead-col col text-center p-4">
+          <h2 class="aw-product-heading">
+            Find the right product for your dream project
+          </h2>
+          <p class="aw-product-para">
+            Milesaway offers a vast range of interior paints for home and
+            commercial spaces. You can choose from category 1, category 2 and
+            category 3 Emulsions based on your budget and requirements.
+          </p>
+        </div>
+      </div>
+      <!-- 1st card -->
+      <div class="row align-items-center">
+        <div class="aw-productSlide col-sm-6">
+          <div id="carousel1" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../assets/images/aw-product1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/aw-thinner1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/aw-product1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/aw-product1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel1"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon pl-caro-pi"
+                aria-hidden="true"
+                style="
+                  background-image: url(../assets/images/Arrow-Left-pc.png);
+                "
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel1"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon pl-caro-ni"
+                aria-hidden="true"
+                style="
+                  background-image: url(../assets/images/Arrow-Right-pc.png);
+                "
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="aw-prodSlide-text col-sm-6">
+          <h3 class="aw-prodSlide-heading">Milesaway Itallian PU</h3>
+          <p class="aw-prodSlide-para">
+            Milesaway Italian PU is a luxury Italian wood finish which gives an
+            ultra-rich finish and excellent durability to wooden surfaces. The
+            products are formulated using the latest Italian technology and
+            gives the wooden surface a refined and premium look.
+            <!-- Milesaway Italian PU is a luxury Italian wood finish range which gives
+            an ultra-rich finish and excellent durability to wooden surfaces. -->
+          </p>
+
+          <p class="aw-prodSlide-para">
+            View details of different products in this range
+          </p>
+
+          <div class="button-container row">
+            <a
+              href="/product-listing/product-details"
+              class="aw-prodSlide-button btn col-12 col-sm-5 active"
+            >
+              Clear Gloss
+            </a>
+            <a
+              href="/product-listing/product-details"
+              class="aw-prodSlide-button btn col-12 col-sm-5"
+            >
+              Clear Matt
+            </a>
+            <a
+              href="/product-listing/product-details"
+              class="aw-prodSlide-button btn col-12 col-sm-5"
+            >
+              White Gloss
+            </a>
+            <a
+              href="/product-listing/product-details"
+              class="aw-prodSlide-button btn col-12 col-sm-5"
+            >
+              White Gloss
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd card -->
+      <div class="row flex-row-reverse align-items-center">
+        <div class="aw-productSlide col-sm-6">
+          <div id="carousel2" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../assets/images/aw-product1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/aw-thinner1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/aw-product1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/aw-thinner1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 4"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel2"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon pl-caro-pi"
+                aria-hidden="true"
+                style="
+                  background-image: url(../assets/images/Arrow-Left-pc.png);
+                "
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel2"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon pl-caro-ni"
+                aria-hidden="true"
+                style="
+                  background-image: url(../assets/images/Arrow-Right-pc.png);
+                "
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="aw-prodSlide-text col-sm-6">
+          <h3 class="aw-prodSlide-heading">Milesaway Thinners</h3>
+          <p class="aw-prodSlide-para">
+            Milesaway Thinner has excellent thinning properties which reduces the
+            viscosity of Polyurethane Paints very effectively.
+            <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation -->
+          </p>
+          <p class="aw-prodSlide-para">
+            View details of different products in this range
+          </p>
+
+          <div class="button-container row">
+            <a
+              href="/product-listing/product-details"
+              class="aw-prodSlide-button btn col-sm-5"
+              >Slow-Drying Thinner</a
+            >
+            <a
+              href="/product-listing/product-details"
+              class="aw-prodSlide-button btn col-sm-5"
+              >Thinner</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- 3rd card -->
+      <div class="row align-items-center">
+        <div class="aw-productSlide col-sm-6">
+          <div id="carousel3" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../assets/images/aw-product1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/aw-thinner1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/aw-product1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/images/aw-thinner1.png"
+                  class="img-fluid paint-img"
+                  alt="Image 3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel3"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon pl-caro-pi"
+                aria-hidden="true"
+                style="
+                  background-image: url(../assets/images/Arrow-Left-pc.png);
+                "
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel3"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon pl-caro-ni"
+                aria-hidden="true"
+                style="
+                  background-image: url(../assets/images/Arrow-Right-pc.png);
+                "
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="aw-prodSlide-text col-sm-6">
+          <h3 class="aw-prodSlide-heading">Milesaway Insulators</h3>
+          <p class="aw-prodSlide-para">
+            Milesaway Epoxy Isolant is transparent barrier coat between the PU
+            Base Coat and wooden substrate. It protects the base coat from oil
+            and resins present in wood.
+            <!-- Milesaway Italian PU is a luxury Italian wood finish range which gives an ultra-rich finish and excellent durability to wooden surfaces.  -->
+          </p>
+          <p class="aw-prodSlide-para">
+            View details of different products in this range
+          </p>
+
+          <div class="button-container row">
+            <a
+              href="/product-listing/product-details"
+              class="aw-prodSlide-button btn col-sm-6"
+              >Epoxy Isolante</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Register - Section
+         -------------------------------------------------------------------------------------->
+    <div
+      class="container-fluid productGuide-cont mt-md-0 mt-5"
+      style="background-image: url(../assets/images/tool-log-img.png)"
+    >
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-12 col-md-7">
+          <h1 class="Pguide-heading">
+            Get the right guidance to help you choose!
+          </h1>
+          <p class="Pguide-para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4 pGuide-button-col">
+          <button class="pGuide-button btn">PRODUCT GUIDE</button>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Testimonials - Section
+         -------------------------------------------------------------------------------------->
+    <div
+      class="testimonial-container container-fluid mt-5 mb-4"
+      id="testimonial"
+    >
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="testimonial-heading">Why people love Milesaway</h1>
+          <p class="testimonial-subheading my-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad
+            minim veniam.
+          </p>
+        </div>
+
+        <div class="col-12 m-auto testimonials-carousel">
+          <div class="owl-carousel owl-theme" id="testimonials">
+            <div class="item mb-4 p-md-0">
+              <div class="card border-0 shadow">
+                <div class="testimonial-card">
+                  <div class="container testimonial-cont">
+                    <div class="row">
+                      <div class="col-12 testimonial-text">
+                        OMG! I cannot believe that I have got a brand new
+                        landing page after getting appmax. It was super easy to
+                        edit and publish.I have got a brand new landing page.
+                      </div>
+                    </div>
+                    <div class="row align-items-center testimonial-row-data">
+                      <div class="col-2 col-md-1">
+                        <img
+                          src="../assets/images/profile-pic-female.png"
+                          alt="Profile Picture"
+                          class="testimonial-prof img-fluid rounded-circle"
+                        />
+                      </div>
+                      <div class="col-6 col-md-6">
+                        <h3 class="testimonial-name">John Doe</h3>
+                        <p class="testimonial-role">Software Engineer</p>
+                      </div>
+                      <div class="col-4 col-md-4 stars">
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item mb-4 p-md-0">
+              <div class="card border-0 shadow">
+                <div class="testimonial-card">
+                  <div class="container testimonial-cont">
+                    <div class="row">
+                      <div class="col-12 testimonial-text">
+                        OMG! I cannot believe that I have got a brand new
+                        landing page after getting appmax. It was super easy to
+                        edit and publish.I have got a brand new landing page.
+                      </div>
+                    </div>
+                    <div class="row align-items-center testimonial-row-data">
+                      <div class="col-2 col-md-1">
+                        <img
+                          src="../assets/images/profile-pic-female.png"
+                          alt="Profile Picture"
+                          class="testimonial-prof img-fluid rounded-circle"
+                        />
+                      </div>
+                      <div class="col-6 col-md-6">
+                        <h3 class="testimonial-name">John Doe</h3>
+                        <p class="testimonial-role">Software Engineer</p>
+                      </div>
+                      <div class="col-4 col-md-4 stars">
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item mb-4 p-md-0">
+              <div class="card border-0 shadow">
+                <div class="testimonial-card">
+                  <div class="container testimonial-cont">
+                    <div class="row">
+                      <div class="col-12 testimonial-text">
+                        OMG! I cannot believe that I have got a brand new
+                        landing page after getting appmax. It was super easy to
+                        edit and publish.I have got a brand new landing page.
+                      </div>
+                    </div>
+                    <div class="row align-items-center testimonial-row-data">
+                      <div class="col-2 col-md-1">
+                        <img
+                          src="../assets/images/profile-pic-female.png"
+                          alt="Profile Picture"
+                          class="testimonial-prof img-fluid rounded-circle"
+                        />
+                      </div>
+                      <div class="col-6 col-md-6">
+                        <h3 class="testimonial-name">John Doe</h3>
+                        <p class="testimonial-role">Software Engineer</p>
+                      </div>
+                      <div class="col-4 col-md-4 stars">
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item mb-4 p-md-0">
+              <div class="card border-0 shadow">
+                <div class="testimonial-card">
+                  <div class="testimonial-cont container">
+                    <div class="row">
+                      <div class="col-12 testimonial-text">
+                        OMG! I cannot believe that I have got a brand new
+                        landing page after getting appmax. It was super easy to
+                        edit and publish.I have got a brand new landing page.
+                      </div>
+                    </div>
+                    <div class="row align-items-center testimonial-row-data">
+                      <div class="col-2 col-md-1">
+                        <img
+                          src="../assets/images/profile-pic-female.png"
+                          alt="Profile Picture"
+                          class="testimonial-prof img-fluid rounded-circle"
+                        />
+                      </div>
+                      <div class="col-6 col-md-6">
+                        <h3 class="testimonial-name">John Doe</h3>
+                        <p class="testimonial-role">Software Engineer</p>
+                      </div>
+                      <div class="col-4 col-md-4 stars">
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/star.png"
+                          class="img-fluid"
+                          style="height: 15px; width: 15px; margin: 0px 2px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+         Footer - Section
+         -------------------------------------------------------------------------------------->
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-main">
+          <div class="footer-column col-lg-4 col-12">
+            <div class="footer-logos mt-4">
+           
+              <img
+                class="footer-logo2"
+                src="../assets/images/footer-aw-logo.png"
+                alt="Brand Logo"
+              />
+            </div>
+            <div class="footer-description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniamquis.
+              </p>
+            </div>
+            <div class="social-icons">
+              <a class="social-icon" href="#">
+                <img src="../assets/images/fb-logo.png" alt="Facebook" />
+              </a>
+              <a class="social-icon" href="#">
+                <img src="../assets/images/insta-logo.png" alt="Instagram" />
+              </a>
+              <a class="social-icon" href="#">
+                <img src="../assets/images/twitter-logo.png" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-1"></div>
+
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-lg-2"></div>
+
+              <div class="footer-link col-lg-2 col-6">
+                <ul class="footer-links">
+                  <li class="footer-head">Quick Links</li>
+                  <li><a href="/about-us">About Us</a></li>
+                  <li><a href="/faqs">FAQs</a></li>
+                  <li><a href="/contact-us">Contact Us</a></li>
+                  <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="footer-link col-lg-3 px-lg-4 col-6">
+                <ul class="footer-links">
+                  <li class="footer-head">Products</li>
+                  <li>
+                    <a class="footer-a" href="/product-listing"
+                      >Milesaway Itallian PU</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-a" href="/product-listing"
+                      >Milesaway Thinners</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-a" href="/product-listing"
+                      >Milesaway Insulators</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="footer-link col-lg-1 col-4">
+                        <ul class="footer-links">
+                          <li class="footer-head">Tools</li>
+                          <li><a href="#">Store Locator</a></li>
+                          <li><a href="#">Find a Contractor</a></li>
+                          <li><a href="#">Shade Cards</a></li>
+                          <li><a href="#">Visualizer</a></li>
+                          <li><a href="#">Calculators</a></li>
+                        </ul>
+                      </div> -->
+              <div class="footer-link col-lg-2 col-6">
+                <ul class="footer-links">
+                  <li class="footer-head">Content</li>
+                  <li><a href="/blog-listing">Inspirations</a></li>
+                  <li><a href="/blog-listing">Education</a></li>
+                  <li><a href="/blog-listing">Trends</a></li>
+                </ul>
+              </div>
+              <!-- <div class="footer-link col-lg-2 col-8">
+                        <ul class="footer-links">
+                          <li class="footer-head">Store Locator</li>
+                          <li><a href="#">Link 2</a></li>
+                          <br />
+                          <li>Find a Contractor</li>
+                          <li><a href="#">Link 5</a></li>
+                        </ul>
+                      </div> -->
+              <div class="footer-link col-lg-3 col-6">
+                <ul class="footer-links">
+                  <li class="footer-head">Contact Us</li>
+                  <li><a href="#">info@form.com</a></li>
+                  <li>
+                    <a href="#"
+                      >Helpline : 1800 120 6787 <br />
+                      6116 Willa River Suite 610</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="footer-terms-row row p-2">
+          <div class="col-5 col-lg-3 text-center">Terms and condition</div>
+          <div class="col-lg-5 d-none d-lg-block"></div>
+          <div class="col-7 col-lg-4 text-center">
+            ©2023 Milesaway | All right reserve
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- OwlCarousel js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
