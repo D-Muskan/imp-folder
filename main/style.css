@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+}
+.sec1 {
+  width: 100%;
+}
+.nav {
+  width: 100%;
+  height: 80px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: darkcyan; */
+}
+
+.nav-left > h2 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Exo", sans-serif;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
+}
+.nav-right a {
+  text-decoration: none;
+}
+.aicon1,
+.aicon2,
+.aicon3 {
+  color: black;
+  font-family: "Biryani", sans-serif;
+  font-size: 15px;
+  /* background-color: #e24646; */
+  overflow: hidden;
+  /* position: relative; */
+  /* z-index: 99; */
+}
+
+/* .aicon3:hover {
+    animation-name: icons ;
+    animation-duration: 6s;
+} */
+.nav-right i {
+  position: absolute;
+  right: 65px;
+}
+
+/*####### NAME ####### */
+.name {
+  padding-top: 80px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  width: 70%;
+  line-height: 150px;
+}
+.name .line {
+  width: 900px;
+  height: 4px;
+  background-color: #33333332;
+}
+
+.name > h1 {
+  font-size: 180px;
+  font-family: "Exo", sans-serif;
+  letter-spacing: 15px;
+}
+.role {
+  display: flex;
+  justify-content: flex-end;
+}
+.desig {
+  width: 40%;
+  text-align: center;
+  padding: 10px 30px;
+}
+.desig h3 {
+  padding: 10px 0;
+  border-bottom: 2px solid #33333332;
+  font-family: "Biryani", sans-serif;
+  letter-spacing: 3px;
+}
+.desig p {
+  padding-top: 10px;
+  font-family: "Della Respira", serif;
+}
+.sec1-btn {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.sec1-btn i {
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 70px;
+}
+
+/* @keyframes icons {
+i{
+    right: 10px;
+}
+
+} */
