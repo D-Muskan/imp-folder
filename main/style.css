@@ -162,3 +162,45 @@ html {
 }
 /* #################  SECTION 2 ################# */
 
+.sec2{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  color: whitesmoke;
+  background: rgb(9,0,165);
+background: radial-gradient(circle, rgba(9,0,165,1) 6%, rgba(7,11,47,1) 75%);
+}
+.sec2-left{
+  padding:150px 80px ;
+  width: 50%;
+}
+.sec2-left h1{
+  font-size: 70px;
+  font-family: "Exo", sans-serif;
+  
+}
+.sec2-left p{
+  font-size: 20px;
+  margin: 30px 0;
+  font-family: "Della Respira", serif;
+}
+.sec2-left .sec2-btn{
+  padding: 10px 30px;
+  background-color: #FFB803;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+}
+.sec2-right{
+  display: flex;
+  width: 50%;
+  
+}
+#sqr1{
+  overflow: auto;
+}
+.sq-box{
+  height: 250px;
+  width: 250px;
+  background-color: #fff;
+}
