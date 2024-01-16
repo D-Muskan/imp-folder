@@ -29,7 +29,17 @@ html {
   font-size: 30px;
   font-weight: 500;
   font-family: "Exo", sans-serif;
+  position: relative;
 }
+.nav-left > h2::before {
+  content: "";
+  background-image: url(assest/favicon-32x32.png);
+  position: absolute;
+  width: 22px;
+  height: 20px;
+  left: -21px;
+}
+
 .nav-right {
   display: flex;
   align-items: center;
@@ -71,7 +81,7 @@ html {
 }
 
 .aicon1 i {
-  color: rgb(105, 28, 0);
+  color: #c07f00;
   transform: translateX(100px);
   font-size: 20px;
   transition: transform 0.2s ease-in-out;
@@ -81,11 +91,11 @@ html {
 }
 
 .aicon1:hover {
-  border: 1px solid #333;
+  border: 1px solid #c07f00;
   border-radius: 50px;
 }
 .aicon2 i {
-  color: rgb(105, 28, 0);
+  color: #c07f00;
   font-size: 20px;
   transform: translateX(100px);
   transition: transform 0.2s ease-in-out;
@@ -95,12 +105,12 @@ html {
 }
 
 .aicon2:hover {
-  border: 1px solid #333;
+  border: 1px solid #c07f00;
   border-radius: 50px;
 }
 .aicon3 i {
   font-size: 20px;
-  color: rgb(105, 28, 0);
+  color: #c07f00;
   transform: translateX(100px);
   transition: transform 0.2s ease-in-out;
 }
@@ -109,7 +119,7 @@ html {
 }
 
 .aicon3:hover {
-  border: 1px solid #333;
+  border: 1px solid #c07f00;
   border-radius: 50px;
 }
 /*####### NAME ####### */
@@ -162,45 +172,152 @@ html {
 }
 /* #################  SECTION 2 ################# */
 
-.sec2{
+.sec2 {
+  margin: 7% 0%;
+  padding: 10px 10px;
   width: 100%;
   height: 80vh;
   display: flex;
-  color: whitesmoke;
-  background: rgb(9,0,165);
-background: radial-gradient(circle, rgba(9,0,165,1) 6%, rgba(7,11,47,1) 75%);
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
 }
-.sec2-left{
-  padding:150px 80px ;
-  width: 50%;
+.sec2-left {
+  padding: 150px 50px;
+  width: 45%;
 }
-.sec2-left h1{
-  font-size: 70px;
-  font-family: "Exo", sans-serif;
-  
+.sec2-left h1 {
+  font-size: 60px;
+  font-family: "Biryani", sans-serif;
 }
-.sec2-left p{
-  font-size: 20px;
+.sec2-left p {
+  font-size: 18px;
   margin: 30px 0;
   font-family: "Della Respira", serif;
+  color: #f8f8ffad;
 }
-.sec2-left .sec2-btn{
+.sec2-left .sec2-btn {
   padding: 10px 30px;
-  background-color: #FFB803;
+  background-color: #ffb803;
+  color: rgba(0, 0, 0, 0.811);
   border: none;
   border-radius: 7px;
-  font-size: 18px;
+  font-size: 16px;
+  /* font-family: "Biryani", sans-serif; */
+  font-family: "Exo", sans-serif;
 }
-.sec2-right{
+.sec2-right {
   display: flex;
-  width: 50%;
-  
+  width: 55%;
+  justify-content: space-evenly;
 }
-#sqr1{
-  overflow: auto;
+
+#sqr1 {
+  overflow-y: hidden;
+  display: inline-block;
+  white-space: nowrap;
 }
-.sq-box{
-  height: 250px;
+
+#sqr1::-webkit-scrollbar {
+  display: none;
+}
+
+.sq-box {
+  height: 200px;
   width: 250px;
-  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+
+.sq-box > img {
+  object-fit: cover;
+  width: 98%;
+  height: 95%;
+}
+
+#sqr2 {
+  overflow-y: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+}
+.sq2-box > img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 85%;
+}
+.sq2-box {
+  position: relative;
+  height: 150px;
+  margin-bottom: 5px;
+  width: 250px;
+  animation-name: scroll;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#sqr2::-webkit-scrollbar {
+  display: none;
+}
+
+/* #sqr3 {
+  overflow-y: hidden;
+  background-color: #cbfffc;
+  display: inline-block;
+  white-space: nowrap;
+}
+.sq3-box {
+  height: 200px;
+  margin: 5px;
+  width: 250px;
+  animation-name: scrollThree;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+#sqr3::-webkit-scrollbar {
+  display: none;
+}
+@keyframes scrollThree {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-100% - 4px));
+  }
+} */
+
+.sec3 {
+  padding: 50px 90px;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+}
+.sec3-left {
+  width: 50%;
+}
+.sec3-left > h1 {
+  font-size: 70px;
+  font-family: "Exo", sans-serif;
+}
+.sec3-left > p {
+  font-family: "Biryani", sans-serif;
+  font-size: 15px;
+}
+.sec3-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.sec3-right > a {
+  font-size: 60px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
