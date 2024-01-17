@@ -29,13 +29,16 @@ html {
   border-bottom: 4px solid rgba(50, 50, 50, 0.788);
 }
 
-.nav-left > h2 {
-  font-size: 30px;
+
+.nav-left > a{
+  font-size: 20px;
   font-weight: 500;
   font-family: "Exo", sans-serif;
   position: relative;
+  text-decoration: none;
+  color: black;
 }
-.nav-left > h2::before {
+.nav-left >a> h2::before {
   content: "";
   background-image: url(assest/favicon-32x32.png);
   position: absolute;
@@ -54,16 +57,22 @@ html {
   text-decoration: none;
 }
 
-.aicon1,
-.aicon2,
-.aicon3 {
+.aicon1{
   overflow: hidden;
   height: 30px;
   width: 130px;
   /* background-color: #e81010; */
   display: flex;
   align-items: center;
-
+  flex-wrap: nowrap;
+}
+.aicon2{
+  overflow: hidden;
+  height: 30px;
+  width: 180px;
+  /* background-color: #e81010; */
+  display: flex;
+  align-items: center;
   flex-wrap: nowrap;
 }
 .aicon1,
@@ -71,13 +80,8 @@ html {
   gap: 15px;
 }
 
-.aicon3 {
-  gap: 10px;
-}
-
 .aicon1 > h3,
-.aicon2 > h3,
-.aicon3 > h3 {
+.aicon2 > h3{
   color: black;
   font-family: "Biryani", sans-serif;
   font-size: 15px;
@@ -109,20 +113,6 @@ html {
 }
 
 .aicon2:hover {
-  border: 1px solid #020202;
-  border-radius: 50px;
-}
-.aicon3 i {
-  font-size: 20px;
-  color: #020202;
-  transform: translateX(100px);
-  transition: transform 0.2s ease-in-out;
-}
-.aicon3:hover i {
-  transform: translateX(0px);
-}
-
-.aicon3:hover {
   border: 1px solid #020202;
   border-radius: 50px;
 }
@@ -313,6 +303,8 @@ border: 3.2px solid rgb(0, 0, 0);
   }
 } */
 
+
+/* ...................fotter.................. */
 .sec3 {
   
   padding: 50px 90px;
